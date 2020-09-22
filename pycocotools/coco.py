@@ -72,7 +72,7 @@ class COCO:
         self.imgs = []
         self.cats = []
         if not annotation_file == None:
-            print('Loading Annotations into Memory...')
+            print('Loading Annotations from {}'.format(annotation_file))
             time_t = datetime.datetime.utcnow()
             dataset = json.load(open(annotation_file, 'r'))
             # print(datetime.datetime.utcnow() - time_t)
